@@ -3,8 +3,6 @@ BandSite::Application.routes.draw do
 
   get "pages/search"
 
-resources :profiles
-
 resources :users
 
 end

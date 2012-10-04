@@ -2,11 +2,22 @@ Doctype html
 html
   head
     title Band Site
-    = stylesheet_link_tag " application ", media: "all"
-    = javascript_include_tag " application "
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
     = csrf_meta_tags
+  header.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to "band site",root_path, id: "logo"
+          nav
+            ul.nav.pull-right
+              li = link_to "Home", root_path
+              li = link_to "Search", search_path
+              li = link_to "Sign in", '#'
   body
-    ==yield
+    .container
+      ==yield
+      footer.footer
+        small This is a Footer, it will hold copyright things
 
-
-
+  

@@ -164,6 +164,11 @@ GEM
     slim (1.3.2)
       temple (~> 0.5.0)
       tilt (~> 1.3.3)
+    slim-rails (1.0.3)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      slim (~> 1.0)
     spork (0.9.0)
     sprockets (2.1.3)
       hike (~> 1.2)
@@ -205,7 +210,7 @@ DEPENDENCIES
   rails (= 3.2.8)
   rspec-rails (= 2.11.0)
   sass-rails (= 3.2.5)
-  slim
+  slim-rails
   spork (= 0.9.0)
   sqlite3 (= 1.3.5)
   uglifier (= 1.2.3)

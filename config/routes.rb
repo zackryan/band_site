@@ -1,7 +1,7 @@
 BandSite::Application.routes.draw do
-  get "pages/home"
+  root :to => 'pages#home'
 
-  get "pages/search"
+  match '/search', to: 'pages#search'
 
 resources :users
 
